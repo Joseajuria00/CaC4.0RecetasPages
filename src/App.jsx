@@ -22,7 +22,7 @@ export const App = () =>{
   return(
     <BrowserRouter>
       <header>
-        <Link to="/" className="title">RECETAS</Link>
+        <Link to="/CaC4.0RecetasPages/" className="title">RECETAS</Link>
       </header>
       <Routes>
         <Route path="/CaC4.0RecetasPages/" element = {<LandingPage/>}/>
