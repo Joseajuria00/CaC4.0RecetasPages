@@ -25,15 +25,14 @@ export const App = () =>{
         <Link to="/" className="title">RECETAS</Link>
       </header>
       <Routes>
-        <Route path="/" element = {<LandingPage/>}/>
-        <Route path="/receta/:recetaId" element = {<DetalleRecetas/>}/>
-        <Route path="/login" element = {<Login/>}/>
-        <Route path="/register" element = {<Register/>}/>
-        <Route path="/admin" element={<RequireAuth> <Show/> </RequireAuth>}/>
-        <Route path="/admin/create" element={<RequireAuth><Create/></RequireAuth>}/>
-        <Route path="/admin/edit/:recetaId" element={<RequireAuth><Edit/></RequireAuth>}/>
-        <Route path="/admin/detail/:recetaId" element={<DetalleRecetas/>}/>
-        <Route path="/CaC4.0RecetasPages/" element={<Navigate to="/"/>}/>
+        <Route path="/CaC4.0RecetasPages/" element = {<LandingPage/>}/>
+        <Route path="/CaC4.0RecetasPages/receta/:recetaId" element = {<DetalleRecetas/>}/>
+        <Route path="/CaC4.0RecetasPages/login" element = {<Login/>}/>
+        <Route path="/CaC4.0RecetasPages/register" element = {<Register/>}/>
+        <Route path="/CaC4.0RecetasPages/admin" element={<RequireAuth> <Show/> </RequireAuth>}/>
+        <Route path="/CaC4.0RecetasPages/admin/create" element={<RequireAuth><Create/></RequireAuth>}/>
+        <Route path="/CaC4.0RecetasPages/admin/edit/:recetaId" element={<RequireAuth><Edit/></RequireAuth>}/>
+        <Route path="/CaC4.0RecetasPages/admin/detail/:recetaId" element={<DetalleRecetas/>}/>
       </Routes>
     </BrowserRouter>
   )
