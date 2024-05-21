@@ -123,7 +123,7 @@ export const Edit = () => {
             </div>
 
             <button type='submit' className='btn btn-primary'>Update</button>
-            <Link to='/admin'>
+            <Link to='/CaC4.0RecetasPages/admin'>
               <button className='btn btn-danger'>
                 Cancelar
               </button>
